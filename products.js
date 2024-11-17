@@ -8,14 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // console.log(menuBtn)
   });
 
+
+  const productItems = document.querySelectorAll('.product-item');
+
   // fetch json data
   fetch('products.json')
     //converting the response into json
     .then(response => response.json())
     .then(products => {
 
-        const productItems = document.querySelectorAll('.product-item');
-
+       
         //loop through products and populate intem divs
         productItems.forEach((productItem, index) => {
 
@@ -53,3 +55,20 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Error loading the products:', error);
     });
     
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+
+    filterBtns.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const filterType = e.target.getAttribute('data-filter');
+
+            //if a item has a speciftic filter type only thats going to be displayed
+            productItems.forEach(item => {
+                if (item.classList.contains(filterType)){
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
