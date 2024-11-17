@@ -3,83 +3,95 @@
         "id": 1,
         "name": "Spalding Legacy",
         "photo": "professional-photos/spalding_legacy.png",
-        "price": 59.65
+        "price": 59.65,
+        "description": "Approved game ball"
     },
 
     {
         "id": 2,
         "name": "Wilson Adam Series",
-        "photo": "professional-photos/wilson_admaSeries.png",
-        "price": 64.95
+        "photo": "professional-photos/wilson_adamSeries.png",
+        "price": 64.95,
+        "description": "Approved game ball"
     },
 
     {
         "id": 3,
         "name": "Wilson NBA Forge",
         "photo": "professional-photos/wilson_NBA_forge.png",
-        "price": 29.83
+        "price": 29.83,
+        "description": "Approved game ball"
     },
 
     {
         "id": 4,
         "name": "Spalding Street",
         "photo": "outdoor-photos/spalding_outdoor_street.png",
-        "price": 19.99
+        "price": 19.99,
+        "description": "Best outdoor basketball to play with friends"
     },
 
     {
         "id": 5,
         "name": "Wilson DRV",
         "photo": "outdoor-photos/wilson_outdoor_drv.png",
-        "price": 15.78
+        "price": 15.78,
+        "description": "Best outdoor basketball to play with friends"
     },
 
     {
         "id": 6,
         "name": "Wilson Outdoor",
         "photo": "outdoor-photos/wilson_outdoor1.png",
-        "price": 26.95
+        "price": 26.95,
+        "description": "Best outdoor basketball to play with friends"
     },
 
     {
         "id": 7,
         "name": "Wilson Evo",
         "photo": "indoor-photos/wilson_indoor_evo.png",
-        "price": 79.95
+        "price": 79.95,
+        "description": "Feel true performance with this indoor basketball"
     },
 
     {
         "id": 8,
         "name": "Wilson Evo Blue",
         "photo": "indoor-photos/wilson_indoor_evoBlue.png",
-        "price": 79.95
+        "price": 79.95,
+        "description": "Feel true performance with this indoor basketball"
     },
 
     {
         "id": 9,
         "name": "Wilson  NCAA Series",
         "photo": "indoor-photos/wilson_indoor_ncaa.png",
-        "price": 40.95
+        "price": 40.95,
+        "description": "Feel true performance with this indoor basketball"
     },
 
     {
         "id": 10,
         "name": "VKTRY Insoles",
         "photo": "accessory-photos/insoles.png",
-        "price": 149.00
+        "price": 149.00,
+        "description": "Take your game to the next level with these insoles!"
     },
 
     {
         "id": 11,
         "name": "Ball Pump",
         "photo": "accessory-photos/ballPump.png",
-        "price": 32.99
+        "price": 32.99,
+        "description": "Ensure a great game with a ball pump around!"
     },
 
     {
         "id": 12,
         "name": "Nike Mouth Guard",
         "photo": "accessory-photos/mouth_guard.png",
-        "price": 15.99
+        "price": 15.99,
+        "description": "Get ready for the best on-court protection with this mouth guard!"
     }
 ]

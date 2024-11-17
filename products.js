@@ -34,12 +34,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const priceEl = document.createElement('p');
                 priceEl.classList.add('product-price');
-                priceEl.textContent = product.price;
+                priceEl.textContent = `$${product.price.toFixed(2)}`;
+
+                const descriptionEl = document.createElement('p');
+                descriptionEl.classList.add('product-description');
+                descriptionEl.textContent = product.description;
 
                 //append created elements to product-item div 
                 productItem.appendChild(imgEl);
                 productItem.appendChild(nameEl);
                 productItem.appendChild(priceEl);
+                productItem.appendChild(descriptionEl);
 
             }
         });
