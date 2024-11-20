@@ -8,6 +8,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
+  /* nav */
 .nav-wrapper{
     background: url('/home-page-pics/hero-img.png') center fixed;
     background-size: cover;
@@ -21,6 +22,7 @@ body {
   border-radius: 50%;
  }
 
+ /* Main content */
    main {
     display: flex;
     flex-direction: column;

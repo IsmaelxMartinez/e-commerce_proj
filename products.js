@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
         //loop through products and populate intem divs
         productItems.forEach((productItem, index) => {
 
+            //checks if there is a corresposponding item at the current index
             if(products[index]){
+                //getting product at current index
                 const product = products[index];
 
                 //creating html elements for each products
@@ -51,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     })
+    //catch any errors suring the the fetch or data processing
     .catch(error => {
         console.error('Error loading the products:', error);
     });
@@ -58,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const filterBtns = document.querySelectorAll('.filter-btn');
 
+    //loops through each button
     filterBtns.forEach(button => {
         button.addEventListener('click', (e) => {
             const filterType = e.target.getAttribute('data-filter');

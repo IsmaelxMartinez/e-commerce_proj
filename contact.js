@@ -19,10 +19,14 @@ function validateForm(event){
     var email = document.getElementById('email').value.trim();
     var message = document.getElementById('message').value.trim();
 
+    //only number and spaces allowed
     var nameRegex = /^[A-Za-z\s]+$/
+    //standard email format
     var emailRegex = /^[a-zA-z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    //ensures message isnt empty
     var messageRegex = /^(?!\s*$).+/;
 
+    //checks if the regex worked
     if (!nameRegex.test(name)){
         alert("Please enter a valid name. Only letters and spaces allowed");
         return false;
