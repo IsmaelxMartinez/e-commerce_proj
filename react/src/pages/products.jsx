@@ -69,7 +69,11 @@ function Products() {
               key={product.id}
               className={`product-item ${product.category.toLowerCase()}`}
             >
-              <img src={product.photo} alt={product.prodName} />
+              <img
+                className="product-image"
+                src={product.photo}
+                alt={product.prodName}
+              />
               <h3>{product.prodName}</h3>
               <p>{product.prodDescription}</p>
               <p>${product.price}</p>

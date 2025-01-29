@@ -11,16 +11,16 @@ function Home() {
       </div>
 
       <section className="product-pages">
-        <Link to="/products" className="product outdoor">
+        <Link to="/products" className="product outdoor-home">
           <p>Outdoor</p>
         </Link>
-        <Link to="/products" className="product indoor">
+        <Link to="/products" className="product indoor-home">
           <p>Indoor</p>
         </Link>
-        <Link to="/products" className="product professional">
+        <Link to="/products" className="product professional-home">
           <p>Professional</p>
         </Link>
-        <Link to="/products" className="product other">
+        <Link to="/products" className="product other-home">
           <p>Accessory</p>
         </Link>
       </section>
