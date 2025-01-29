@@ -9,7 +9,7 @@ app.use(cors()); // allows cros origin reuqest to be allowed
 const db = mysql2.createConnection({
   host: "sql5.freesqldatabase.com",
   user: "sql5760047",
-  password: "1wjk4t5qlt",
+  password: "1wJK4t5qlt",
   database: "sql5760047",
 });
 
