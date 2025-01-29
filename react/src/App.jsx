@@ -4,8 +4,6 @@ import Home from "./pages/index.jsx";
 import Contact from "./pages/contact.jsx";
 import Footer from "./components/footer.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "materialize-css/dist/css/materialize.min.css"; // CSS
-import "materialize-css/dist/js/materialize.min.js"; // JavaScript
 
 function App() {
   return (

@@ -1,9 +1,18 @@
 import "../styles/product.css";
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function Products() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  //get the curreny url  query params
+  const location = useLocation();
+
+  // Function to get query params
+  const getCategoryFromQuery = () => {
+    const urlParams = new URLSearchParams(location.search);
+    return urlParams.get("category");
+  };
 
   //fetch products when the component mounts
   useEffect(() => {
@@ -18,6 +27,15 @@ function Products() {
         console.error("Error fetching products:", error);
       });
   }, []);
+
+  useEffect(() => {
+    const category = getCategoryFromQuery();
+    if (category) {
+      handleFilter(category);
+    } else {
+      setFilteredProducts(products);
+    }
+  }, [location, products]);
 
   const handleFilter = (category) => {
     if (category === "all") {
