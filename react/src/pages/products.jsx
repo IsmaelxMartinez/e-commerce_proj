@@ -1,6 +1,7 @@
 import "../styles/product.css";
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Card from "../components/productCard.jsx";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -79,26 +80,7 @@ function Products() {
           </button>
         </div>
       </section>
-
-      <section className="product-section">
-        <div className="product-container">
-          {filteredProducts.map((product) => (
-            <div
-              key={product.id}
-              className={`product-item ${product.category.toLowerCase()}`}
-            >
-              <img
-                className="product-image"
-                src={product.photo}
-                alt={product.prodName}
-              />
-              <h3>{product.prodName}</h3>
-              <p>{product.prodDescription}</p>
-              <p>${product.price}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <Card products={filteredProducts} />
     </main>
   );
 }
